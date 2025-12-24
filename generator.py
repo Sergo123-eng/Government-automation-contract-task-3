@@ -11,6 +11,7 @@ def generate_proposal(title, agency):
         "title": title,
         "agency": agency,
         "status": "Draft",
+        # for the code below i weas building a proposal, which naturally has labeled sections:
         "sections": {
             "Executive Summary": (
                 f"We propose to support {agency} by delivering services "
@@ -78,4 +79,5 @@ if __name__ == "__main__":
 
     print("Bid decision:", decision)
     print("Proposal generated successfully.")
+
 
