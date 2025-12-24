@@ -30,15 +30,16 @@ def generate_proposal(title, agency):
             )
         }
     }
-
+# for here i created another function that has proposal and filename
 def export_proposal_to_docx(proposal, filename):
-    doc = Document()
-    doc.add_heading(proposal["title"], level=1)
+    doc = Document() # starting blank document
+    doc.add_heading(proposal["title"], level=1) # added heading i don't know what is proposal["title"] do, then level 1 it means it is on the first level of that documnet
+    # add paragrpah inside that document again i don't understand what is proposal agency
     doc.add_paragraph(f"Agency: {proposal['agency']}")
-    doc.add_paragraph(f"Status: {proposal['status']}")
+    doc.add_paragraph(f"Status: {proposal['status']}")# Same here
 
-    for section, content in proposal["sections"].items():
-        doc.add_heading(section, level=2)
+    for section, content in proposal["sections"].items():# so here it means by section and content is that document has sections and content what is ["sections"]
+        doc.add_heading(section, level=2) # what happens in here
         doc.add_paragraph(content)
 
     doc.save(filename)
@@ -79,5 +80,6 @@ if __name__ == "__main__":
 
     print("Bid decision:", decision)
     print("Proposal generated successfully.")
+
 
 
