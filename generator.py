@@ -33,7 +33,7 @@ def generate_proposal(title, agency):
 # for here i created another function that has proposal and filename
 def export_proposal_to_docx(proposal, filename):
     doc = Document() # starting blank document
-    doc.add_heading(proposal["title"], level=1) # added heading i don't know what is proposal["title"] do, then level 1 it means it is on the first level of that documnet
+    doc.add_heading(proposal["title"], level=1) # added heading with the title value
     # add paragrpah inside that document again i don't understand what is proposal agency
     doc.add_paragraph(f"Agency: {proposal['agency']}")
     doc.add_paragraph(f"Status: {proposal['status']}")# Same here
@@ -80,6 +80,7 @@ if __name__ == "__main__":
 
     print("Bid decision:", decision)
     print("Proposal generated successfully.")
+
 
 
 
