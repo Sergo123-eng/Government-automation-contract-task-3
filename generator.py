@@ -1,4 +1,29 @@
+Task:
+Role: Automation / Business Systems
+Responsibilities
+Proposal draft generator (DOCX / structured output)
+Template matching from past proposals
+CRM auto-injection (GoHighLevel / Teltrans)
+GoHighLevel:A CRM + marketing automation platform Used to manage leads, contacts, pipelines, emails, SMS, and workflows Common in agencies and SaaS businesses
+Teltans: A CRM / workflow system used to track clients, proposals, and operational data. Similar idea: store records, update statuses, generate reports
+Lead status updates & notes
+Reporting outputs for staff review
+Deliverables
+Auto-generated proposal drafts
+CRM entries created automatically
+Basic reporting (what to bid on, what to skip)
+Skills Used
+Python
+Document automation
+Webhooks / APIs
+Wehbooks: A webhook lets another system notify your code automatically. The CRM pushes data to you when something happens Example: lead status changes → your system gets notified
 
+Think: “The system tells me when something happens.”
+APIs stand for: Application Programming Interfaces) .An API lets your code talk to another system.Your program sends data (like a proposal or lead).The other system receives it and responds
+Example: send a proposal → CRM creates a lead
+Think: “I ask the system to do something.”
+CRM workflows
+code:
 import requests
 from docx import Document
 import requests
@@ -80,6 +105,7 @@ if __name__ == "__main__":
 
     print("Bid decision:", decision)
     print("Proposal generated successfully.")
+
 
 
 
