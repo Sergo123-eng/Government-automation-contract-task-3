@@ -56,6 +56,7 @@ def generate_proposal(title, agency):
         }
     }
 # for here i created another function that has proposal and filename
+# You need data first, then formatting.
 def export_proposal_to_docx(proposal, filename):
     doc = Document() # starting blank document
     doc.add_heading(proposal["title"], level=1) # added heading with the title value
@@ -105,6 +106,7 @@ if __name__ == "__main__":
 
     print("Bid decision:", decision)
     print("Proposal generated successfully.")
+
 
 
 
